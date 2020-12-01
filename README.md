@@ -1,5 +1,6 @@
 # [Deep Dreamer](https://deepdreamer.fq.nz/)
-Easy to configure Python program that make use of [Google's DeepDream](https://github.com/google/deepdream/)
+Easy to configure Python program that makes use of [Google's DeepDream](https://github.com/google/deepdream/).
+This fork has been modified to show progress bars with ETAs, and to fix old bugs with GIF generation.
 
 * [Requirements](#requirements)
 * [Installation](#installation)
@@ -14,10 +15,11 @@ Easy to configure Python program that make use of [Google's DeepDream](https://g
 * [Pillow](https://pypi.python.org/pypi/Pillow/)
 * [Caffe](http://caffe.berkeleyvision.org/)
 * [FFmpeg](https://www.ffmpeg.org/) (Optional, required for videos.)
+* [tqdm](https://github.com/tqdm/tqdm) to display progress bars
 
 ## Installation
-1. Install [NumPy](https://pypi.python.org/pypi/numpy), [SciPy](https://pypi.python.org/pypi/scipy/), [Pillow](https://pypi.python.org/pypi/Pillow/) and [Caffe](http://caffe.berkeleyvision.org/). *On Ubuntu 17.10 installing caffe will usually install all other dependencies.*
-2. Clone this project. `git clone https://github.com/kesara/deepdreamer.git`
+1. Install [NumPy](https://pypi.python.org/pypi/numpy), [SciPy](https://pypi.python.org/pypi/scipy/), [Pillow](https://pypi.python.org/pypi/Pillow/) and [Caffe](http://caffe.berkeleyvision.org/). *On Ubuntu 17.10 installing caffe will usually install all other dependencies.* Install [tqdm](https://github.com/tqdm/tqdm) to enable progress bars.
+2. Clone this project. `git clone https://github.com/uajqq/deepdreamer.git`
 3. Go to project directory. `cd deepdeamer`
 4. Download **deploy.prototxt** from [bvlc_googlenet](https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet) into the project directory.
 5. Add line `force_backward: true` to **deploy.prototxt** file.
