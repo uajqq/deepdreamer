@@ -100,6 +100,9 @@ def main():
                 octave_scale=args.octave_scale, end=args.layers, clip=clip,
                 network=args.network, gif=gif, reverse=reverse,
                 duration=args.duration, loop=loop, gpu=gpu, gpuid=args.gpuid)
+    except KeyboardInterrupt:
+        print("\nWaking up...")
+        sys.exit(2)
     except Exception as e:
         print("Error: {}".format(e))
         sys.exit(2)
