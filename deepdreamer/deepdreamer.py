@@ -237,11 +237,7 @@ def deepdream(
         bar_format="{l_bar:>20}{bar:10}{r_bar}",
         desc="Total",
         position=-1,
-<<<<<<< HEAD
         unit="dream",
-=======
-        unit="dreams",
->>>>>>> 81a661671753db205757ba1ac072fd6a9f63c0eb
     ):
         img = _deepdream(
             net,
@@ -253,11 +249,7 @@ def deepdream(
             clip=clip,
         )
         img_fromarray(np.uint8(img)).save(
-<<<<<<< HEAD
             "{}_{}_{:03d}.jpg".format(
-=======
-            "{}_{}_{}.jpg".format(
->>>>>>> 81a661671753db205757ba1ac072fd6a9f63c0eb
                 path.splitext(img_path)[0], re.sub('[\\/:"*?<>|]+', "_", end), i
             )
         )
